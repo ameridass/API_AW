@@ -1,11 +1,14 @@
 const mysql = require('mysql');
 
 const dbConect = mysql.createConnection({
-    host:'localhost',
+    host:'35.238.180.64',
     user:'root',
-    password:'',
-    database:'udv_bk1'
+    password:'#Guatemala1234#',
+    database:'tn_bd1',
+    multipleStatements:true
 });
+
+
 
 dbConect.connect(function (err){
     if(err){

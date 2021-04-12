@@ -7,9 +7,9 @@ app.set('port', process.env.PORT || 8080);
 app.use(express.json());
 
 //rutas
-app.use(require('./routes/creditos'))
+app.use(require('./routes/clientes'))
 
 //configuracion del server
 app.listen(app.get('port'), () => {
-console.log('Escuchando en el puerto '+app.get('port') +' correctamente')
+console.log('Escuchando en el puerto '+ app.get('port') +' correctamente')
 });
