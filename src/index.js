@@ -2,6 +2,7 @@ const express = require('express');
 const app = express();
 
 //config 
+//"dev":"nodemon src/index.js"
 app.set('port', process.env.PORT || 8080);
 //gestion o middleware
 app.use(express.json());
